@@ -30,25 +30,35 @@
                                     <action selector="Buttonpush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="07T-UW-NdI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hG-jS-TpT">
-                                <rect key="frame" x="125" y="391" width="124" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Alternative Button"/>
-                                <connections>
-                                    <action selector="AlternativeButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jWC-yX-fhB"/>
-                                </connections>
-                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TO4-l4-Oh0">
+                                <rect key="frame" x="175" y="130.5" width="25" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hea-Yl-EI5">
+                                <rect key="frame" x="175" y="185.5" width="25" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="WKg-5z-Xsc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HBk-ku-kcY"/>
                             <constraint firstItem="NbO-HM-Sei" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HKm-4a-mMo"/>
+                            <constraint firstItem="TO4-l4-Oh0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hj1-W7-NR2"/>
+                            <constraint firstItem="Hea-Yl-EI5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M2a-cT-shx"/>
                             <constraint firstItem="WKg-5z-Xsc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SO4-TV-UU3"/>
+                            <constraint firstItem="Hea-Yl-EI5" firstAttribute="top" secondItem="TO4-l4-Oh0" secondAttribute="bottom" constant="25" id="nB3-AA-DFa"/>
+                            <constraint firstItem="TO4-l4-Oh0" firstAttribute="top" secondItem="NbO-HM-Sei" secondAttribute="bottom" constant="70" id="naB-5i-Gg5"/>
                             <constraint firstItem="NbO-HM-Sei" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="sfS-a7-oEB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="Text1" destination="TO4-l4-Oh0" id="jUS-TO-igT"/>
+                        <outlet property="Text2" destination="Hea-Yl-EI5" id="gFf-XF-cNB"/>
                         <outlet property="TheLabel" destination="NbO-HM-Sei" id="9Q6-Th-ts4"/>
                     </connections>
                 </viewController>

@@ -12,27 +12,21 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var TheLabel: UILabel!
     
-    var tapCount = 0
+    @IBOutlet weak var Text1: UITextField!
+    
+    
+    @IBOutlet weak var Text2: UITextField!
     
     @IBAction func Buttonpush(_ sender: Any) {
-        TheLabel.text = "Nothing..."
+        TheLabel.text = "that adds to.."
+        TheLabel.text = "Answer is \(Double(Text1.text!)! + Double(Text2.text!)!)"
     }
     
-    @IBAction func AlternativeButtonPushed(_ sender: Any) {
-        TheLabel.text = "Absolutely Nothing..."
-        print("Button tapped bitch")// to check the button has been pressed
-        tapCount = tapCount + 1
-        print(tapCount)
-        
-        if tapCount >= 10 {
-            TheLabel.text = "Stop Pressing... that's 10 times now"
-        }
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.view.backgroundColor = UIColor.red
-        TheLabel.text = "What's up"
+        TheLabel.text = "Put two numbers"
         
     }
 
